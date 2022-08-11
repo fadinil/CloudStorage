@@ -1,0 +1,29 @@
+{
+  "name": "cloudstorage",
+  "version": "1.0.0",
+  "description": "Это проект - Облачное хранилище.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fadinil/CloudStorage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fadinil/CloudStorage/issues"
+  },
+  "homepage": "https://github.com/fadinil/CloudStorage#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

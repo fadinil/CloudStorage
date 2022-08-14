@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { request, response } from 'express'
 import mongoose from 'mongoose'
 
 const PORT = 5000;
@@ -6,9 +6,12 @@ const app = express()
 const DB_URL = 'mongodb+srv://user:user@cluster0.lnouucd.mongodb.net/?retryWrites=true&w=majority'
 
 app.use(express.json())
-
-app.get('/', (req, res) => {
-    res.status(200).json('Сервер работает')
+const tmp = [{"id": '123',"name": 'fadinil',"password": 'lox'}]
+app.get('/', (req, response) => {
+    response.send(tmp);
+})
+app.post('/', (request, response) => {
+    console.log(request.body);
 })
 
 

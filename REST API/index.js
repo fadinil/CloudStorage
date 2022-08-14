@@ -7,10 +7,10 @@ const DB_URL = 'mongodb+srv://user:user@cluster0.lnouucd.mongodb.net/?retryWrite
 
 app.use(express.json())
 
-app.post('/', (req, res) => {
-    console.log(req.body)
+app.get('/', (req, res) => {
     res.status(200).json('Сервер работает')
 })
+
 
 async function startApp(){
     try{
